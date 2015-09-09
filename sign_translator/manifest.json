@@ -1,0 +1,24 @@
+﻿{
+"manifest_version": 2,
+ "name": "مترجم لغة الإشارة",
+ "version": "0.1",
+ "description": "يترجم النص العربي للغة الإشارة",
+ "manifest_version": 2,
+ "browser_action": {
+   "default_title": "Selected Text",
+   "default_icon": "online.png",
+   "default_popup": "popup.html" 
+ },
+ "permissions": [
+   "tabs",
+   "<all_urls>"
+ ],
+ "content_scripts": [
+   {
+     "matches": ["<all_urls>"],
+     "js": ["selection.js"],
+     "run_at": "document_start",
+     "all_frames": true
+   }
+ ]
+}
