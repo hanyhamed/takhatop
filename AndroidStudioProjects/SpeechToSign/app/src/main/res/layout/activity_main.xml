@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/textView1"
+    android:layout_toLeftOf="@+id/textView1"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/btnSpeak"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/speak"
+        android:src="@android:drawable/ic_btn_speak_now" />
+
+    <EditText
+        android:id="@+id/txtText"
+        android:layout_width="match_parent"
+        android:layout_height="180sp"
+        android:textSize="20sp"
+        android:background="@drawable/shape2"
+        android:layout_marginTop="5sp"
+        android:layout_below="@+id/btnSpeak"
+        android:textColor="#ffffffff"
+        android:text="ذهب الطالب إلى المدرسة"
+        android:textAlignment="gravity"
+        android:gravity="right|top"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttontrans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="لغة الإشارة"
+        android:textSize="20sp"
+        android:layout_marginTop="5sp"
+        android:background="@drawable/yellowbutton"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtText"
+        />
+    <Button
+        android:id="@+id/buttonsound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="صوت"
+        android:textSize="20sp"
+        android:layout_marginTop="5sp"
+        android:background="@drawable/yellowbutton"
+        android:layout_marginLeft="100sp"
+        android:layout_marginRight="20sp"
+        android:layout_below="@+id/txtText"
+        />
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/buttonexit"
+        android:text="خروج"
+        android:textSize="20sp"
+        android:layout_marginTop="5sp"
+        android:background="@drawable/yellowbutton"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtText"
+        />
+</RelativeLayout>

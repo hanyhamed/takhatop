@@ -1,0 +1,511 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/Basic_data">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical"
+        android:id="@+id/vScroll"
+        >
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/TableLayout1">
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip"
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextVillage"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1.2"
+            android:textSize="20sp"
+            android:background="@drawable/shape"
+            android:gravity="right"
+            />
+        <TextView
+            android:id="@+id/textViewVillage"
+            android:text="القرية"
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:textSize="20sp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:autoText="false"
+            android:gravity="right"
+            />
+
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextIso"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1.2"
+            android:background="@drawable/shape"
+            android:textSize="20sp"
+            android:gravity="right"
+            />
+        <TextView
+            android:id="@+id/textViewIso"
+            android:text="العزلة"
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:textSize="20sp"
+            android:gravity="right"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextCenter"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1.2"
+            android:background="@drawable/shape"
+            android:textSize="20sp"
+            android:gravity="right"
+            />
+        <TextView
+            android:id="@+id/textViewCenter"
+            android:text="المركز"
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:textSize="20sp"
+            android:gravity="right"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextManage"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1.2"
+            android:background="@drawable/shape"
+            android:textSize="20sp"
+            android:gravity="right"
+            />
+        <TextView
+            android:id="@+id/textViewManage"
+            android:text="المديرية"
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:textSize="20sp"
+            android:gravity="right"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextGovern"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1.2"
+            android:textSize="20sp"
+            android:background="@drawable/shape"
+            android:gravity="right"
+            />
+        <TextView
+            android:id="@+id/textViewGovern"
+            android:text="المحافظة"
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:textSize="20sp"
+            android:gravity="right"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip"
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextRelicName"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1.2"
+            android:textSize="20sp"
+            android:background="@drawable/shape"
+            android:gravity="right"
+            />
+        <TextView
+            android:id="@+id/textView1Page1"
+            android:text="اسم الأثر"
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:textSize="20sp"
+            android:gravity="right"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editRelicType"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1.2"
+            android:background="@drawable/shape"
+            android:textSize="20sp"
+            android:gravity="right"
+            />
+        <TextView
+            android:id="@+id/textView2Page1"
+            android:text="نوعه"
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:textSize="20sp"
+            android:gravity="right"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextGDate"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1.2"
+            android:background="@drawable/shape"
+            android:textSize="20sp"
+            android:gravity="right"
+            />
+        <TextView
+            android:id="@+id/textView3Page1"
+            android:text="تاريخه الميلادي"
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:textSize="20sp"
+            android:gravity="right"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextHDate"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1.2"
+            android:background="@drawable/shape"
+            android:textSize="20sp"
+            android:gravity="right"
+            />
+        <TextView
+            android:id="@+id/textView4Page1"
+            android:text="الموافق هجريا"
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:textSize="20sp"
+            android:gravity="right"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextSize"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1.2"
+            android:textSize="20sp"
+            android:background="@drawable/shape"
+            android:gravity="right"
+            />
+        <TextView
+            android:id="@+id/textView5Page1"
+            android:text="حجمه"
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:textSize="20sp"
+            android:gravity="right"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextLong"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1.2"
+            android:textSize="20sp"
+            android:gravity="right"
+            android:background="@drawable/shape"
+            />
+        <TextView
+            android:id="@+id/textView6Page1"
+            android:text="خط الطول"
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:textSize="20sp"
+            android:gravity="right"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+             />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextAlt"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1.2"
+            android:textSize="20sp"
+            android:gravity="right"
+            android:background="@drawable/shape"
+            />
+        <TextView
+            android:id="@+id/textView7Page1"
+            android:text="خط العرض"
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:textSize="20sp"
+            android:gravity="right"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextOther"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1.2"
+            android:textSize="20sp"
+            android:gravity="right"
+            android:background="@drawable/shape"
+            />
+        <TextView
+            android:id="@+id/textView8Page1"
+            android:text="أخرى"
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:textSize="20sp"
+            android:gravity="right"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow112"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+    <Button
+        android:background="@drawable/button_selector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="حفظ"
+        android:textColor="#ffffff"
+        android:clickable="true"
+        android:textSize="20sp"
+        android:id="@+id/BtnSave"
+        android:layout_margin="5dp"
+
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        />
+        <Button
+            android:background="@drawable/button_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="جديد"
+            android:textColor="#ffffff"
+            android:clickable="true"
+            android:textSize="20sp"
+            android:id="@+id/BtnNew"
+            android:layout_margin="5dp"
+
+            android:layout_weight="1"
+
+            android:gravity="center_horizontal"
+            />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow113"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+    <Button
+        android:background="@drawable/button_selector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="التالي"
+        android:textColor="#ffffff"
+        android:clickable="true"
+
+        android:textSize="20sp"
+        android:id="@+id/BtnNext"
+        android:layout_margin="5dp"
+
+        android:layout_weight="1"
+
+        android:gravity="center_horizontal"
+        />
+
+    <Button
+        android:background="@drawable/button_selector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="السابق"
+        android:textColor="#ffffff"
+        android:clickable="true"
+        android:textSize="20sp"
+        android:id="@+id/BtnPrev"
+        android:layout_margin="5dp"
+
+        android:layout_weight="1"
+
+        android:gravity="center_horizontal"
+        />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow114"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+        <Button
+            android:background="@drawable/button_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="إرسال ما جمع"
+            android:textColor="#ffffff"
+            android:clickable="true"
+            android:textSize="20sp"
+            android:id="@+id/BtnSend"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+
+            style="@style/Widget.AppCompat.Toolbar.Button.Navigation"
+            android:gravity="center_horizontal"
+            />
+        <Button
+            android:background="@drawable/button_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="إلتقاط صورة"
+            android:textColor="#ffffff"
+            android:clickable="true"
+            android:textSize="20sp"
+            android:id="@+id/BtnPic"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+
+            style="@style/Widget.AppCompat.Toolbar.Button.Navigation"
+            android:gravity="center_horizontal"
+            />
+
+    </TableRow>
+        <TableRow
+            android:id="@+id/tableRow115"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+            <Button
+                android:background="@drawable/button_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="عودة"
+                android:textColor="#ffffff"
+                android:clickable="true"
+                android:textSize="20sp"
+                android:id="@+id/BtnBack"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+
+                style="@style/Widget.AppCompat.Toolbar.Button.Navigation"
+                android:gravity="center_horizontal"
+                />
+    <Button
+        android:background="@drawable/button_selector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="حذف"
+        android:textColor="#ffffff"
+        android:clickable="true"
+        android:textSize="20sp"
+        android:id="@+id/BtnDel"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+
+        style="@style/Widget.AppCompat.Toolbar.Button.Navigation"
+        android:gravity="center_horizontal"
+        />
+
+
+        </TableRow>
+
+    </TableLayout>
+    </ScrollView>
+</LinearLayout>

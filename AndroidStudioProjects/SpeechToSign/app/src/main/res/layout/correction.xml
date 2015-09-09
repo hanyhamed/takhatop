@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/senttxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+
+        android:background="@drawable/shape2"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/alerttxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:layout_below="@+id/senttxt"
+        android:background="#ffff1100"
+        android:textColor="#fff1ff38"
+        android:visibility="invisible"
+        android:textSize="20sp"
+        />
+    <RadioGroup
+        android:id="@+id/radios"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:inputType="text"
+        android:layout_below="@+id/alerttxt"
+        android:orientation="vertical" >
+    <RadioButton
+        android:layout_below="@+id/alerttxt"
+        android:id="@+id/choice1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+
+        android:layout_alignParentRight="true"
+        android:visibility="invisible"
+        android:gravity="right"
+        android:layout_gravity="right"
+        android:textAlignment="gravity" />
+    <RadioButton
+        android:id="@+id/choice2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:layout_below="@+id/choice1"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible"
+        android:gravity="right"
+        android:layout_gravity="right"
+        android:textAlignment="gravity" />
+    <RadioButton
+        android:id="@+id/choice3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:layout_below="@+id/choice2"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible"
+        android:gravity="right"
+        android:layout_gravity="right"
+        android:textAlignment="gravity" />
+
+    </RadioGroup>
+    <Button
+        android:id="@+id/buttontrans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="تصحيح"
+        android:textSize="20sp"
+        android:layout_marginTop="5sp"
+        android:background="@drawable/yellowbutton"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/radios"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonexit"
+        android:text="عودة"
+        android:textSize="20sp"
+        android:layout_marginTop="5sp"
+        android:background="@drawable/yellowbutton"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/radios"
+
+        />
+</RelativeLayout>
